@@ -1,0 +1,115 @@
+export default function ShopWebsite() {
+  return (
+    <div className="min-h-screen bg-gray-100 text-gray-800">
+      {/* Header */}
+      <header className="bg-blue-600 text-white shadow-lg">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+          <h1 className="text-3xl font-bold">Sharma General Store</h1>
+          <nav className="space-x-6 text-lg">
+            <a href="#home" className="hover:text-yellow-300">Home</a>
+            <a href="#products" className="hover:text-yellow-300">Products</a>
+            <a href="#about" className="hover:text-yellow-300">About</a>
+            <a href="#contact" className="hover:text-yellow-300">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section id="home" className="bg-white py-20">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <h2 className="text-5xl font-bold mb-6">Aapki Apni Dukkan</h2>
+          <p className="text-xl text-gray-600 mb-8">
+            Quality products aur best service ek hi jagah.
+          </p>
+          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-2xl text-lg shadow-lg">
+            Shop Now
+          </button>
+        </div>
+      </section>
+
+      {/* Products */}
+      <section id="products" className="py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <h3 className="text-4xl font-bold text-center mb-12">Hamare Products</h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-3xl shadow-lg p-6 hover:scale-105 transition">
+              <img
+                src="https://images.unsplash.com/photo-1586201375761-83865001e31c"
+                alt="Product"
+                className="rounded-2xl mb-4 h-52 w-full object-cover"
+              />
+              <h4 className="text-2xl font-semibold mb-2">Grocery Items</h4>
+              <p className="text-gray-600">Daily use ke sabhi saman uplabdh.</p>
+            </div>
+
+            <div className="bg-white rounded-3xl shadow-lg p-6 hover:scale-105 transition">
+              <img
+                src="https://images.unsplash.com/photo-1511556820780-d912e42b4980"
+                alt="Product"
+                className="rounded-2xl mb-4 h-52 w-full object-cover"
+              />
+              <h4 className="text-2xl font-semibold mb-2">Fashion Products</h4>
+              <p className="text-gray-600">Latest kapde aur accessories.</p>
+            </div>
+
+            <div className="bg-white rounded-3xl shadow-lg p-6 hover:scale-105 transition">
+              <img
+                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+                alt="Product"
+                className="rounded-2xl mb-4 h-52 w-full object-cover"
+              />
+              <h4 className="text-2xl font-semibold mb-2">Electronics</h4>
+              <p className="text-gray-600">Mobile aur electronic saman best price par.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section id="about" className="bg-white py-16">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h3 className="text-4xl font-bold mb-6">About Us</h3>
+          <p className="text-lg text-gray-600 leading-8">
+            Hum pichle kai saalon se apne customers ko best quality products aur bharosemand service dete aa rahe hain.
+          </p>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="py-16 bg-gray-200">
+        <div className="max-w-4xl mx-auto px-6">
+          <h3 className="text-4xl font-bold text-center mb-10">Contact Us</h3>
+
+          <div className="bg-white rounded-3xl shadow-lg p-8">
+            <form className="space-y-6">
+              <input
+                type="text"
+                placeholder="Aapka Naam"
+                className="w-full border border-gray-300 rounded-xl p-4"
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                className="w-full border border-gray-300 rounded-xl p-4"
+              />
+              <textarea
+                placeholder="Message"
+                rows="5"
+                className="w-full border border-gray-300 rounded-xl p-4"
+              ></textarea>
+              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-2xl text-lg">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-blue-600 text-white py-6 text-center">
+        <p>© 2026 Sharma General Store. All Rights Reserved.</p>
+      </footer>
+    </div>
+  );
+}
